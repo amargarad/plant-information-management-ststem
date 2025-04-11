@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef6ec; /* Soft pastel green */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 45%;
+    background: #ffffff; /* Clean white */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Leaf Background */
+.profile-container::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+    background: url('leaf.png') no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.profile-container h2 {
+    font-size: 26px;
+    color: #2e7d32; /* Deep forest green */
+    margin-bottom: 15px;
+}
+
+/* Profile Details */
+.profile-details {
+    text-align: left;
+    background: #f4fff4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(46, 125, 50, 0.12);
+}
+
+.profile-details p {
+    font-size: 18px;
+    color: #2c3e2e; /* Earthy dark green */
+    margin: 10px 0;
+}
+
+.profile-details strong {
+    color: #1b5e20; /* Dark Green */
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #66bb6a; /* Vibrant lime green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(102, 187, 106, 0.2);
+}
+
+.logout-btn:hover {
+    background: #1b5e20; /* Deep dark green */
+    box-shadow: 0px 5px 15px rgba(27, 94, 32, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

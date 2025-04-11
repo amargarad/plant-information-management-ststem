@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f5;
+    text-align: center;
+}
+
+/* Header Styling */
+h2, h3 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Form Styling */
+#productForm {
+    background: #ffffff;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#productForm label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    min-width: 150px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    align-self: flex-end;
+}
+
+button:hover {
+    background: #333;
+}
+/* Center the Add Product button */
+.form-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background: linear-gradient(45deg, #343a40, #222);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Links */
+a {
+    text-decoration: none;
+    color: #dc3545;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a71d2a;
+}
